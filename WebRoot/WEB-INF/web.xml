@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>buyer_register_servlet</servlet-name>
+    <servlet-class>buyer_servlet.buyer_register_servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>seller_register_servlet</servlet-name>
+    <servlet-class>seller_servlet.seller_register_servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyer_checkusername</servlet-name>
+    <servlet-class>buyer_servlet.buyer_checkusername</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyer_checknickname</servlet-name>
+    <servlet-class>buyer_servlet.buyer_checknickname</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>seller_checkusername</servlet-name>
+    <servlet-class>seller_servlet.seller_checkusername</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>seller_checkstorename</servlet-name>
+    <servlet-class>seller_servlet.seller_checkstorename</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>buyer_login</servlet-name>
+    <servlet-class>buyer_servlet.buyer_login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>seller_login</servlet-name>
+    <servlet-class>seller_servlet.seller_login</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>buyer_register_servlet</servlet-name>
+    <url-pattern>/buyer_servlet/buyer_register_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>seller_register_servlet</servlet-name>
+    <url-pattern>/seller_servlet/seller_register_servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyer_checkusername</servlet-name>
+    <url-pattern>/buyer_servlet/buyer_checkusername</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyer_checknickname</servlet-name>
+    <url-pattern>/buyer_servlet/buyer_checknickname</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>seller_checkusername</servlet-name>
+    <url-pattern>/seller_servlet/seller_checkusername</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>seller_checkstorename</servlet-name>
+    <url-pattern>/seller_servlet/seller_checkstorename</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>buyer_login</servlet-name>
+    <url-pattern>/buyer_servlet/buyer_login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>seller_login</servlet-name>
+    <url-pattern>/seller_servlet/seller_login</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>/MyProject_Demo_one/View/welcome.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <filter>
+  	<filter-name>filter</filter-name>
+  	<filter-class>filter.filter</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>filter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+</web-app>

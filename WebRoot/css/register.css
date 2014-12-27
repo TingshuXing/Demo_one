@@ -1,0 +1,100 @@
+body {
+	background-color: #eee;
+}
+
+.log0 {
+	margin-top: 50px;
+	font-size: 20px;
+	font-weight: 800;
+	color: #808080;
+}
+.log1{
+	width: 550px;
+	height: 400px;
+	margin: auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #fcfcfc;
+	padding: 50px 50px 0px 100px;
+	font-family: "΢���ź�";
+	font-weight: 700;
+	font-size: 14px;
+	color: #cbcbcb;
+}
+
+.form_left{
+	width: 285px;
+	height: 340px;
+	float: left;
+}
+.form_right{
+	padding-top:56px;
+	width: 250px;
+	height:340px;
+	float:right;
+}
+.form_right div{
+	width:250px;
+	height:50px;
+}
+input{
+	width: 200px;
+	line-height: 24px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 10px;
+	float: right;
+	margin-top: 10px;
+}
+.log2 {
+	margin-left: 1210px;
+}
+.log3 {
+	margin-top: 238px;
+}
+
+span{
+	line-height: 50px;
+}
+msg{
+	margin-top: 10px;
+}
+.submit {
+	background: #699BFA;
+	width: 100px;
+	height: 34px;
+	border-radius: 5px;
+	border: 1px solid #699BFA;
+	margin-left: 100px;
+	margin-top: 10px;
+	color: #fff;
+	font-weight: 800;
+}
+.register{
+	width: 180px;
+	height: 50px;
+	margin-left: 150px;
+	margin-bottom: 20px;
+	margin-top: -30px;
+}
+
+.a_back{
+	text-decoration: none;
+	color: #699BFA;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.validate{
+	margin-top: -4px;
+}
+
+#text5{
+	color: red;
+}
+
+#text6{
+	display:block;
+	margin-left:70px;
+	margin-top: -18px;
+}

@@ -1,0 +1,105 @@
+body {
+	background-color: #eee;
+}
+
+.log0 {
+	margin-top: 80px;
+}
+
+.login_span{
+	font-size: 20px;
+	font-weight: 800;
+	color: #808080;
+}
+
+.log1 {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background: #FCFCFC;
+}
+
+input {
+	width: 200px;
+	line-height: 24px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+}
+
+.img_login {
+	margin-top: 20px;
+	margin-left: 80px;
+}
+
+.img_user {
+	margin-top: 23px;
+	margin-left: 30px;
+}
+
+.username {
+	position: relative;
+	top: -6px;
+	padding-left: 10px;
+}
+
+.img_pwd {
+	margin-left: 30px;
+}
+
+.password {
+	position: relative;
+	top: -6px;
+	left: 2px;
+	padding-left: 10px;
+}
+
+.remember {
+	width: 20px;
+	margin-left: 140px;
+}
+
+.rem_span {
+	color: #CBCBCB;
+	font-weight: 800;
+	position: relative;
+	top: -2px;
+}
+
+.submit {
+	background: #699BFA;
+	width: 100px;
+	height: 34px;
+	border-radius: 5px;
+	border: 1px solid #699BFA;
+	margin-left: 100px;
+	color: #fff;
+	font-weight: 800;
+}
+
+.register {
+	margin-botome: 0px;
+	margin-left: 230px;
+	color: #699BFA;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 650;
+}
+
+.log2 {
+	margin-left: 1040px;
+}
+
+.a_change{
+	text-decoration: none;
+	color: #699BFA;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.log3 {
+	margin-top: 390px;
+}
