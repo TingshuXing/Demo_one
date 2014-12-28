@@ -16,6 +16,7 @@
 	</ul>
 	<div class="show">
 		<img src="../img/chuizi.jpg">
+		<video src="../video/1.mp4" controls="controls"></video>
 	</div>
 
 

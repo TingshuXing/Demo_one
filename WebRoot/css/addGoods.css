@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+.right .title {
+	width:950px;
+	height: 100px;
+}
+
+.right .title span{
+	font-family: "微软雅黑";
+	font-weight: 800;
+	color: 666;
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.right .form {
+	text-align:center;
+	width: 950px;
+	height: 600px;
+}
+
+.right .form span {
+	font-family: "微软雅黑";
+	font-weight: 800;
+	color: 666;
+}
+
+.right .form input {
+	line-height: 30px;
+	width:300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.right .form textarea {
+	line-height: 30px;
+	width:300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.right .form .button input {
+	width:100px;
+	height:40px;
+	font-family: "微软雅黑";
+	font-weight: 800;
+	font-size: 15px;
+	background: #699BFA;
+	margin-bottom: 50px;
+}
+
+.right .form div {
+	margin-top: 30px;
+}
+
+.log3 {
+	margin-top: 160px;
+}

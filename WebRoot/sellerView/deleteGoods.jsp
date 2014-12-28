@@ -7,6 +7,7 @@
 <head>
 <title>恭喜发财!</title>
 <link rel="stylesheet" type="text/css" href="../css/sellerMain.css" />
+<link rel="stylesheet" type="text/css" href="../css/addGoods.css" />
 </head>
 <body>
 	<ul class="nav">
@@ -24,8 +25,31 @@
 			</ul>
 		</div>
 		<div class="right">
-			<h1 align="center">删除商品信息</h1>
+			<div class="title">
+				<h1 align="center">删除商品信息</h1>
+				<span>请填写商品信息</span>
+			</div>
+			<div class="form">
+				<form action="" method="post">
+	 				<div>
+	 					<span>商品名称:</span> <input type="text" name="goodsName" placeholder="请输入商品名称" />
+	 				</div>
+	 				<div>
+	 					<span>商品价格:</span> <input type="text" name="goodsPrice" placeholder="请输入商品价格" />
+	 				</div>
+	 				<div>
+	 					<span>用户密码:</span> <input type="text" name="userpassword" placeholder="请输入用户密码" />
+	 				</div>
+	 				<div class="button">
+	 					<input type="submit" value="确认删除" />
+	 				</div>
+	 				<span>请核对好商品信息再确认删除</span>
+				</form>
+			</div>
 		</div>
+	</div>
+	<div class="log3">
+		<%@include file="../Repetition/footer.jsp" %>
 	</div>
 </body>
 </html>
