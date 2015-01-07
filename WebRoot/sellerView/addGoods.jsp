@@ -30,7 +30,7 @@
 				<span>请填写商品信息</span>
 			</div>
 			<div class="form">
-				<form action="" method="post">
+				<form action="/MyProject_Demo_one/seller_servlet/goods_add" method="post">
 	 				<div>
 	 					<span>商品名称:</span> <input type="text" name="goodsName" placeholder="请输入商品名称" />
 	 				</div>
@@ -38,7 +38,7 @@
 	 					<span>商品价格:</span> <input type="text" name="goodsPrice" placeholder="请输入商品价格" />
 	 				</div>
 	 				<div>
-	 					<span>商品简介:</span> <textarea rows="" cols="" placeholder="请输入商品简介"></textarea>
+	 					<span>商品简介:</span> <textarea rows="" cols="" placeholder="请输入商品简介" name="goodsText"></textarea>
 	 				</div>
 	 				<div>
 	 					<span>商品图片:</span> <input type="file"> 

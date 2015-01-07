@@ -2,6 +2,7 @@ package seller_servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.security.NoSuchAlgorithmException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import seller_dao.Seller_register_dao;
+import util.md_five;
 
 
 public class seller_register_servlet extends HttpServlet {
@@ -35,10 +37,15 @@ public class seller_register_servlet extends HttpServlet {
 		String validate2 = (String)session.getAttribute("randStr");
 		if(validate.equals(validate2)){
 			Seller seller = new Seller();
+			try {	//密码加密
+				String newPassword = md_five.addPassword(request.getParameter("password"));
+				seller.setPassword(newPassword);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			seller.setUsername(request.getParameter("username"));
 			seller.setStorename(request.getParameter("storename"));
 			seller.setEmail(request.getParameter("email"));
-			seller.setPassword(request.getParameter("password"));
 			Seller_register_dao seller_register_dao = new Seller_register_dao();
 			boolean bool = seller_register_dao.addSeller(seller);
 			if(bool){	

@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import util.md_five;
+
 import buyer_dao.Buyer_login_dao;
 
 public class buyer_login extends HttpServlet {
@@ -30,8 +32,13 @@ public class buyer_login extends HttpServlet {
 			throws ServletException, IOException {
 		//新建一个Buyer对象
 		Buyer buyer = new Buyer();
+		try {
+			String newPassword = md_five.addPassword(request.getParameter("password"));
+			buyer.setPassword(newPassword);	//将表单提交过来的password放入对象中
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		buyer.setUsername(request.getParameter("username"));	//将表单提交过来的username放入对象中
-		buyer.setPassword(request.getParameter("password"));	//将表单提交过来的password放入对象中
 		//新建一个Dao对象
 		Buyer_login_dao buyer_login_dao = new Buyer_login_dao();
 		//调用Dao对象的检查用户名密码是否匹配的方法,返回true表示匹配,反之则不匹配

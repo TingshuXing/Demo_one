@@ -30,9 +30,9 @@
 				<span>请填写商品信息</span>
 			</div>
 			<div class="form">
-				<form action="" method="post">
+				<form action="/MyProject_Demo_one/seller_servlet/goods_change" method="post">
 	 				<div>
-	 					<span>原商品名称:</span> <input type="text" name="goodsName" placeholder="请输入原来商品名称" />
+	 					<span>原商品名称:</span> <input type="text" name="goodsOldName" placeholder="请输入原来商品名称" />
 	 				</div>
 	 				<div>
 	 					<span>新商品名称:</span> <input type="text" name="goodsName" placeholder="请输入新的商品名称" />
@@ -41,7 +41,7 @@
 	 					<span>新商品价格:</span> <input type="text" name="goodsPrice" placeholder="请输入新的商品价格" />
 	 				</div>
 	 				<div>
-	 					<span>新商品简介:</span> <textarea rows="" cols="" placeholder="请输入新的商品简介"></textarea>
+	 					<span>新商品简介:</span> <textarea rows="" cols="" placeholder="请输入新的商品简介" name="goodsText"></textarea>
 	 				</div>
 	 				<div>
 	 					<span>新商品图片:</span> <input type="file"> 

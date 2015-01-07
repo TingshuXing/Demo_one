@@ -30,7 +30,7 @@
 				<span>请填写商品信息</span>
 			</div>
 			<div class="form">
-				<form action="" method="post">
+				<form action="/MyProject_Demo_one/seller_servlet/goods_delete" method="post">
 	 				<div>
 	 					<span>商品名称:</span> <input type="text" name="goodsName" placeholder="请输入商品名称" />
 	 				</div>

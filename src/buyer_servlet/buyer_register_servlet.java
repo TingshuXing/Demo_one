@@ -2,12 +2,15 @@ package buyer_servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.security.NoSuchAlgorithmException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import util.md_five;
 
 import buyer_dao.Buyer_register_dao;
 
@@ -34,10 +37,15 @@ public class buyer_register_servlet extends HttpServlet {
 		String validate2 = (String)session.getAttribute("randStr");
 		if(validate.equals(validate2)){		//验证验证码是否正确
 			Buyer buyer = new Buyer();
+			try {	//密码加密
+				String newPassword = md_five.addPassword(request.getParameter("password"));
+				buyer.setPassword(newPassword);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 			buyer.setUsername(request.getParameter("username"));
 			buyer.setNickname(request.getParameter("nickname"));
 			buyer.setEmail(request.getParameter("email"));
-			buyer.setPassword(request.getParameter("password"));
 			Buyer_register_dao buyer_register_dao = new Buyer_register_dao();
 			boolean bool = buyer_register_dao.addBuyer(buyer);
 			if(bool){	

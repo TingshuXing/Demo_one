@@ -87,3 +87,13 @@ a {
 	font-family: "微软雅黑";
 	color: #666;
 }
+
+.table {
+	margin: 0 auto;
+}
+.table td{
+	font-family:"微软雅黑";
+	font-weight:800;
+	padding:5px 20px;
+	text-align: center;
+}
