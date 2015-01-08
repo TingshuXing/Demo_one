@@ -46,6 +46,8 @@ public class buyer_login extends HttpServlet {
 		if(bool){	//用户名密码匹配
 			HttpSession session = request.getSession();
 			session.setAttribute("buyer", buyer);	//将用户信息放入session
+			String name = "a";
+			session.setAttribute("login", name);
 			response.sendRedirect("/MyProject_Demo_one/buyerView/loginSuccess.jsp");
 		}else{	//用户名密码不匹配
 			HttpSession session = request.getSession();

@@ -5,6 +5,10 @@
 <%@page import="seller_servlet.Seller"%>
 <%
 	Seller seller = (Seller) session.getAttribute("seller");
+	String bool = (String) session.getAttribute("login1");
+	if (bool == null) {
+		response.sendRedirect("sellerLogin.jsp");
+	}
 %>
 <%
 	Goods_find_dao goods_dao = new Goods_find_dao();
@@ -17,22 +21,17 @@
 </head>
 <body>
 	<ul class="nav">
-		<li class="logo"><img src="../img/logo.jpg" />
-		</li>
-		<li class="word">welcome to selling,<%=seller.getUsername()%></li>
+		<li class="logo"><img src="../img/logo.jpg" /></li>
+		<li class="word">welcome to selling,happy everyday!</li>
 	</ul>
 
 	<div class="main">
 		<div class="left">
 			<ul>
-				<li><a href="addGoods.jsp"> 增加商品</a>
-				</li>
-				<li><a href="deleteGoods.jsp"> 删除商品</a>
-				</li>
-				<li><a href="changeGoods.jsp"> 修改商品</a>
-				</li>
-				<li><a href="findGoods.jsp"> 查看商品</a>
-				</li>
+				<li><a href="addGoods.jsp"> 增加商品</a></li>
+				<li><a href="deleteGoods.jsp"> 删除商品</a></li>
+				<li><a href="changeGoods.jsp"> 修改商品</a></li>
+				<li><a href="findGoods.jsp"> 查看商品</a></li>
 			</ul>
 		</div>
 		<div class="right">
@@ -49,9 +48,9 @@
 							Goods goods1 = (Goods) goods.get(i);
 					%>
 					<tr>
-						<td><%=goods1.getGoodsName() %></td>
-						<td><%=goods1.getGoodsPrice() %></td>
-						<td><%=goods1.getGoodsText() %></td>
+						<td><%=goods1.getGoodsName()%></td>
+						<td><%=goods1.getGoodsPrice()%></td>
+						<td><%=goods1.getGoodsText()%></td>
 					<tr>
 						<%
 							}
