@@ -49,10 +49,6 @@
 						<span>商品价格:</span> <input type="text" name="goodsPrice"
 							placeholder="请输入商品价格" />
 					</div>
-					<div>
-						<span>用户密码:</span> <input type="text" name="userpassword"
-							placeholder="请输入用户密码" />
-					</div>
 					<div class="button">
 						<input type="submit" value="确认删除" />
 					</div>

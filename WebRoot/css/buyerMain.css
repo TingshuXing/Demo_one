@@ -57,7 +57,7 @@ li {
 
 .main {
 	width: 100%;
-	height: 1000px;
+	height: 1400px;
 }
 
 .main li {
@@ -71,8 +71,8 @@ li {
 .main .main_img {
 	width: 260px;
 	height: 300px;
-	margin-left: 20px;
 	margin-top: 20px;
+	margin-left:20px;
 	background-color: #fff;
 }
 

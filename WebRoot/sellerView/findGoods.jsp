@@ -42,6 +42,7 @@
 						<td>商品名称</td>
 						<td>商品价格</td>
 						<td>商品简介</td>
+						<td>上传图片</td>
 					</thead>
 					<%
 						for (int i = 0; i < goods.size(); i++) {
@@ -51,6 +52,9 @@
 						<td><%=goods1.getGoodsName()%></td>
 						<td><%=goods1.getGoodsPrice()%></td>
 						<td><%=goods1.getGoodsText()%></td>
+						<td>
+							<a href="http://localhost:8080/MyProject_Demo_one/sellerView/addPicture.jsp?name=<%=goods1.getGoodsName()%>">添加图片</a>
+						</td>
 					<tr>
 						<%
 							}

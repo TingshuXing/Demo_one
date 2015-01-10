@@ -5,10 +5,10 @@
 <%@page import="buyer_servlet.Buyer"%>
 <%
 	Buyer buyer = (Buyer) session.getAttribute("buyer");
-	String bool = (String)session.getAttribute("login");
-  	if(bool == null){
+	String bool = (String) session.getAttribute("login");
+	if (bool == null) {
 		response.sendRedirect("buyerLogin.jsp");
-	} 
+	}
 %>
 <%
 	Goods_find_dao goods_dao = new Goods_find_dao();
@@ -21,11 +21,9 @@
 </head>
 <body>
 	<ul class="nav">
-		<li class="logo"><img src="../img/logo.jpg" />
-		</li>
+		<li class="logo"><img src="../img/logo.jpg" /></li>
 		<li class="word">welcome to shopping,Happy!</li>
-		<li class="img1"><a href=""><img src="../img/shop.jpg" /> </a>
-		</li>
+		<li class="img1"><a href="cart.jsp"><img src="../img/shop.jpg" /> </a></li>
 	</ul>
 	<div class="show">
 		<img src="../img/chuizi.jpg">
@@ -41,19 +39,22 @@
 		<ul>
 			<li>
 				<div class="main_img">
-					<img src="../img/bai.jpg">
+					<img src="<%=goods1.getPicture()%>">
 				</div>
-				<div class="name"><%=goods1.getGoodsName() %></div>
-				<div class="price">RMB:<%=goods1.getGoodsPrice() %></div>
+				<div class="name"><%=goods1.getGoodsName()%></div>
+				<div class="price">
+					RMB:<%=goods1.getGoodsPrice()%></div>
 				<div class="add">
-					<a href="">购买</a>
-				</div></li>
+					<a href="/MyProject_Demo_one/buyer_servlet/buy_goods?goodsName=<%=goods1.getGoodsName() %>&goodsPrice=<%=goods1.getGoodsPrice()%>">购买</a>
+				</div>
+			</li>
 		</ul>
 		<%
 			}
 		%>
-		<div class="log3">
-			<%@include file="../Repetition/footer.jsp"%>
-		</div>
+	</div>
+	<div class="log3">
+		<%@include file="../Repetition/footer.jsp"%>
+	</div>
 </body>
 </html>

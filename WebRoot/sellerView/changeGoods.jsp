@@ -57,9 +57,6 @@
 						<span>新商品简介:</span>
 						<textarea rows="" cols="" placeholder="请输入新的商品简介" name="goodsText"></textarea>
 					</div>
-					<div>
-						<span>新商品图片:</span> <input type="file">
-					</div>
 					<div class="button">
 						<input type="submit" value="提交" />
 					</div>

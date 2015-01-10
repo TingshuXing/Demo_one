@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+.table{
+	heigth:500px;
+	width:500px;
+	margin: 0px auto;
+}
+
+table{
+	heigth:500px;
+	width:500px;
+}
+
+tr {
+	text-align: center;
+	font-family: "微软雅黑";
+}
+
+.head {
+	font-weight: 800;
+}
+
+body {
+	background-color: #eee;
+}
+
+.logo {
+	margin-top:5%;
+	margin-left: 38%;
+	height: 70px;
+}
+
+.logo img {
+	float: left;
+}
+
+.logo span {
+	height:70px;
+	font-family: "微软雅黑";
+	font-size: 35;
+	display: block;
+	color:#666;
+	padding-top: 10px;
+}
+
+.foot {
+	margin-left: 56%;
+}
+
+a {
+	text-decoration: none;
+}
